@@ -1,0 +1,384 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: #041731;
+    background-color: #ec922a;
+}
+
+.container {
+    width: 80%;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+.header {
+    background: linear-gradient(135deg, #0b1229 0%, #011030 100%);
+    color:rgb(190, 159, 17);
+    padding: 1rem 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo > .serlog{
+    width: 10%;
+}
+
+.nav {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav a {
+    color: rgb(190, 159, 17);
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.3s ease;
+}
+
+.nav a:hover {
+    opacity: 0.8;
+}
+
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #090635 0%, #010d2e 50%, #06173d 100%);
+    color: rgb(190, 159, 17);
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    opacity: 0.95;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Services Section */
+.services-section {
+    padding: 5rem 0;
+    background-color: #02294d;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: rgb(190, 159, 17);
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 1.125rem;
+    color: rgb(190, 159, 17);
+    margin-bottom: 3rem;
+}
+
+/* Carousel Container */
+.carousel-container {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.carousel-wrapper {
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Service Card */
+.service-card {
+    min-width: 100%;
+    padding: 3rem;
+    background: linear-gradient(135deg, #160447 0%, #140953e7 100%);
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(202, 32, 32, 0.08);
+    border: 2px solid rgb(190, 159, 17);
+}
+
+
+
+.service-icon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.service-title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: rgb(190, 159, 17);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.service-description {
+    font-size: 1.125rem;
+    color: rgb(190, 159, 17);
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.service-features {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.service-features li {
+    display: flex;
+    align-items: center;
+    color: #374151;
+    font-size: 1rem;
+    padding: 0.75rem;
+    background: rgb(190, 159, 17);
+    border-radius: 8px;
+    border-left: 3px solid #6f8a0d;
+}
+
+.service-features li::before {
+    content: "✓";
+    color: #081941;
+    font-weight: bold;
+    margin-right: 0.75rem;
+    font-size: 1.25rem;
+}
+
+/* Carousel Navigation Buttons */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background:rgb(190, 159, 17)e;
+    border: 2px solid #001135;
+    color: #021236;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 10;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+}
+
+.carousel-btn:hover {
+    background: #010d27;
+    color: white;
+    transform: translateY(-50%) scale(1.1);
+}
+
+.carousel-btn-prev {
+    left: -25px;
+}
+
+.carousel-btn-next {
+    right: -25px;
+}
+
+/* Carousel Dots */
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 2rem;
+}
+
+.carousel-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgb(190, 159, 17);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    padding: 0;
+}
+
+.carousel-dot.active {
+    background: #0a1731;
+    width: 32px;
+    border-radius: 6px;
+}
+
+.carousel-dot:hover {
+    background: #03152e;
+}
+
+/* CTA Section */
+.cta-section {
+    background: linear-gradient(135deg, #132150 0%, #02153d 100%);
+    color: rgb(190, 159, 17);
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.cta-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.cta-text {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    opacity: 0.95;
+}
+
+.cta-button {
+    background: rgb(71, 59, 131);
+    color: rgb(190, 159, 17);
+    border: none;
+    padding: 1rem 3rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer */
+.footer {
+    background: #1f2937;
+    color: rgb(190, 159, 17);
+    padding: 2rem 0;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .section-title {
+        font-size: 1.875rem;
+    }
+
+    .service-card {
+        padding: 2rem 1.5rem;
+    }
+
+    .service-title {
+        font-size: 1.5rem;
+    }
+
+    .service-description {
+        font-size: 1rem;
+    }
+
+    .service-features {
+        grid-template-columns: 1fr;
+    }
+
+    .carousel-btn {
+        width: 40px;
+        height: 40px;
+    }
+
+    .carousel-btn-prev {
+        left: -10px;
+    }
+
+    .carousel-btn-next {
+        right: -10px;
+    }
+
+    .nav {
+        gap: 1rem;
+        font-size: 0.875rem;
+    }
+
+    .cta-title {
+        font-size: 1.875rem;
+    }
+
+    .cta-text {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 3rem 0;
+    }
+
+    .services-section {
+        padding: 3rem 0;
+    }
+
+    .carousel-btn-prev,
+    .carousel-btn-next {
+        display: none;
+    }
+
+    .logo span {
+        font-size: 1.25rem;
+    }
+}
