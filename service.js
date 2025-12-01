@@ -161,11 +161,26 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   //  });
 //}
 
+// Hamburger menu toggle functionality
+// const hamburger = document.querySelector('.hamburger');
+// const nav = document.querySelector('.nav');
+// const closeBtn = document.querySelector('.close');
+
+// if (hamburger && nav && closeBtn) {
+//     hamburger.addEventListener('click', () => {
+//         nav.style.display = 'flex';
+//         closeBtn.style.display = 'block';
+//         hamburger.style.display = 'none';
+//     });
+
+//     closeBtn.addEventListener('click', () => {
+//         nav.style.display = 'none';
+//         closeBtn.style.display = 'none';
+//         hamburger.style.display = 'flex';
+//     });
+// }
+
 // Initialize carousel when DOM is ready
-document.addEventListener('DOMContentLoaded', () => {
-    console.log('FOTASCO SECURITY SERVICES - Carousel initialized');
-    new Carousel();
-});
 
 // Add scroll animation for service cards
 const observerOptions = {
@@ -189,3 +204,22 @@ document.querySelectorAll('.service-card').forEach(card => {
     card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
     observer.observe(card);
 });
+
+
+
+const end = document.querySelector(".close");
+const nav = document.querySelector('.nav');
+const burg = document.querySelector('.hamburger');
+
+burg.onclick =()=>{
+    nav.style.display = 'block';
+    end.style.display = 'block';
+    burg.style.display = 'none';
+
+}
+
+end.onclick =()=>{
+    nav.style.display = 'none';
+    end.style.display = 'none';
+    burg.style.display = 'flex';
+}
