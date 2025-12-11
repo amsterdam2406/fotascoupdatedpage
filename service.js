@@ -223,3 +223,8 @@ end.onclick =()=>{
     end.style.display = 'none';
     burg.style.display = 'flex';
 }
+
+// Initialize carousel when DOM is ready
+document.addEventListener('DOMContentLoaded', () => {
+    new Carousel();
+});
