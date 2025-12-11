@@ -128,14 +128,6 @@ body {
     background: rgba(255, 107, 53, 0.1);
 }
 
-.emergency-btn {
-    background: var(--accent-color) !important;
-    color: white !important;
-    padding: 10px 20px !important;
-    border-radius: 25px !important;
-    font-weight: 600;
-    animation: pulse 2s infinite;
-}
 
 @keyframes pulse {
     0% { box-shadow: 0 0 0 0 rgba(255, 107, 53, 0.7); }
@@ -634,6 +626,10 @@ body {
         cursor: pointer;
     }
 
+    /* .hamburger{
+        margin-top: 2rem;
+    } */
+
     .close{
         font-size: x-large;
         font-weight: 700;
@@ -650,16 +646,32 @@ body {
   
   .nav-menu {
     position: fixed;
-    top: 80px;
+    top: 5rem;
     flex-direction: column;
-    background: rgba(13, 20, 33, 0.95);
+    background-color: rgba(13, 20, 33, 0.95);
     width: 100%;
     text-align: center;
-    padding: 20px 0;
+    padding-left: 15rem;
     display: none;
-    height: 35vh;
-    font-size: 25px;
+    height: 23vh;
+    font-size: 17px;
+    margin-right: 27rem;
   }
+
+
+  /* .nav-menu {
+  rgba(13, 20, 33, 0.95);
+    position: fixed;
+    top: 5rem;
+    flex-direction: column;
+    background: rgba(1, 73, 207, 0.95);
+    text-align: center;
+    display: none;
+    height: 25vh;
+    font-size: 15px;
+    margin-left: 27rem;
+  } */
+
 
 
     .nav-menu.active {
