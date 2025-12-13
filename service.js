@@ -153,34 +153,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// CTA Button interaction
-//const ctaButton = document.querySelector('.cta-button');
-//if (ctaButton) {
-    //ctaButton.addEventListener('click', () => {
-    //    alert('Thank you for your interest! Our team will contact you shortly.');
-  //  });
-//}
-
-// Hamburger menu toggle functionality
-// const hamburger = document.querySelector('.hamburger');
-// const nav = document.querySelector('.nav');
-// const closeBtn = document.querySelector('.close');
-
-// if (hamburger && nav && closeBtn) {
-//     hamburger.addEventListener('click', () => {
-//         nav.style.display = 'flex';
-//         closeBtn.style.display = 'block';
-//         hamburger.style.display = 'none';
-//     });
-
-//     closeBtn.addEventListener('click', () => {
-//         nav.style.display = 'none';
-//         closeBtn.style.display = 'none';
-//         hamburger.style.display = 'flex';
-//     });
-// }
-
-// Initialize carousel when DOM is ready
 
 // Add scroll animation for service cards
 const observerOptions = {

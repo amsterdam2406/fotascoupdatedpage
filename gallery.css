@@ -215,22 +215,6 @@ body {
 }
 
 
-/* 
-.section-title {
-    font-size: 2.5rem;
-    background: linear-gradient(135deg, var(--text-color), rgba(26, 35, 126, 0.8));
-    color: var(--secondary-color); Use dark blue for titles */
-    /* margin-bottom: 0.5rem;
-}
-
-
-.section-subtitle {
-    font-size: 1.1rem;
-    color: var(--text-light);
-    margin-bottom: 3rem;
-} */
-
-
 .gallery-grid {
     margin-left: 2rem;
     margin-right: 2rem;
@@ -445,7 +429,4 @@ body {
         width: 100%;
     }
 }
-
-
-
 

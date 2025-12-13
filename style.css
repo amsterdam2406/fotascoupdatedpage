@@ -91,34 +91,3 @@ a {
     font-weight: 500;
 
 }
-/* .bg{
-    border: 1px solid red;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
-
-/* .bg > img{
-    padding-top: 30px;
-}
-
-.txt{
-    color: var(--warning-color);
-    font-size: 20px;
-    text-align: center;
-}
-
-.txt > p{
-    padding-bottom: 20px;
-    font-size: 40px;
-
-}
-
-.txt > h1 > button{
-    font-size: 30px;
-    cursor: pointer;
-    background-color: var(--error-color);
-    color: var(--warning-color);
-} */

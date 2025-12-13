@@ -659,21 +659,6 @@ body {
   }
 
 
-  /* .nav-menu {
-  rgba(13, 20, 33, 0.95);
-    position: fixed;
-    top: 5rem;
-    flex-direction: column;
-    background: rgba(1, 73, 207, 0.95);
-    text-align: center;
-    display: none;
-    height: 25vh;
-    font-size: 15px;
-    margin-left: 27rem;
-  } */
-
-
-
     .nav-menu.active {
         display: flex;
         left: 0;
