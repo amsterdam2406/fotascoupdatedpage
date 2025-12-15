@@ -485,6 +485,22 @@ body {
         margin-right: 27rem;
     }
 
+
+     /* .nav-menu {
+    position: fixed;
+    top: 5rem;
+    flex-direction: column;
+    background-color: rgba(13, 20, 33, 0.95);
+    width: 100%;
+    text-align: center;
+    padding-left: 15rem;
+    display: none;
+    height: 23vh;
+    font-size: 17px;
+    margin-right: 27rem;
+  } */
+  
+
     .nav li{
         margin: 1rem 0;
     }
@@ -579,3 +595,12 @@ body {
         width: 100%;
     }
 }
+
+
+
+
+
+
+
+
+
