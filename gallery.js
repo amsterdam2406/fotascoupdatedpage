@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 document.addEventListener('DOMContentLoaded', () => {
     const galleryItems = document.querySelectorAll('.gallery-item');
     const lightbox = document.getElementById('lightbox-modal');
@@ -78,7 +77,6 @@ end.onclick =()=>{
         }
     });
 });
-=======
 document.addEventListener('DOMContentLoaded', () => {
     const galleryItems = document.querySelectorAll('.gallery-item');
     const lightbox = document.getElementById('lightbox-modal');
@@ -157,4 +155,3 @@ end.onclick =()=>{
         }
     });
 });
->>>>>>> master

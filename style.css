@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Joan&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 :root {
     --primary-color: #212338;
@@ -123,7 +122,6 @@ a {
     background-color: var(--error-color);
     color: var(--warning-color);
 } */
-=======
 @import url('https://fonts.googleapis.com/css2?family=Joan&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 :root {
     --primary-color: #212338;
@@ -191,9 +189,6 @@ a {
     height: 100vh;
     width: 100%;
 }
-
-
-
 .dev_img {
     width: 100%;
     height: 18rem;
@@ -217,4 +212,4 @@ a {
     font-weight: 500;
 
 }
->>>>>>> master
+
