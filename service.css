@@ -22,8 +22,6 @@
 html {
     scroll-behavior: smooth;
 }
-
-
 /* Reset and Base Styles */
 * {
     margin: 0;
@@ -42,16 +40,13 @@ body {
 ::-webkit-scrollbar {
     width: 8px;
 }
-
 ::-webkit-scrollbar-track {
     background: var(--light-color);
 }
-
 ::-webkit-scrollbar-thumb {
     background: var(--primary-color);
     border-radius: 4px;
 }
-
 ::-webkit-scrollbar-thumb:hover {
     background: var(--secondary-color);
 }
@@ -61,14 +56,11 @@ body {
     scrollbar-width: thin;
     scrollbar-color: #ec922a #f8f9fa;
 }
-
-
 .container {
     max-width: 100%;
     margin: 0 auto;
     padding: 0 20px;
 }
-
 /* Header Styles */
 .header {
     position: fixed;
@@ -79,7 +71,6 @@ body {
     z-index: 1000;
     transition: var(--transition);
 }
-
 .header .container {
     width: 100%;
     margin: 10px auto;
@@ -89,7 +80,6 @@ body {
     align-items: center;
     height: 70px;
 }
-
 .logo {
     display: flex;
     align-items: center;
@@ -98,32 +88,25 @@ body {
     font-weight: bold;
     color: rgb(212, 198, 117);
 }
-
 .logo > .serlog{
     width: 15%;
 }
-
 .hamburger{
     display: none;
     flex-direction: column;
     cursor: pointer;    
 }
-
 .close{
     display: none;
     flex-direction: column;
     cursor: pointer;
 }
-
 .hamburger.show {
   display: flex;
 }
-
 .close.show {
   display: flex;
 }
-
-
 .bar {
     width: 25px;
     height: 3px;
@@ -131,17 +114,12 @@ body {
     margin: 3px 0;
     transition: var(--transition);
 }
-
-
 .nav {
     display: flex;
     list-style: none;
     gap: 10px;
     align-items: center;
 }
-
-
-
 .nav-link {
     color: rgba(255, 255, 255, 0.418);
     text-decoration: none;

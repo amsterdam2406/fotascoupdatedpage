@@ -336,8 +336,6 @@ body {
     .header{
         width: 100%;
     }
-
-
     .hamburger,.show{
         display: flex;
         flex-direction: column;
@@ -358,10 +356,6 @@ body {
         text-align: center;
         cursor: pointer;
     }
-
-
-
-  
     .nav{
         position: fixed;        
         flex-direction: column;
@@ -376,36 +370,27 @@ body {
         margin-right: 27rem;
 
     }
-
-
     .nav li{
         margin: 1rem 0;
     }
-
-
     .hero-title {
         font-size: 2rem;
     }
-
     .hero-subtitle {
         font-size: 1rem;
     }
-
     .gallery-grid {
         grid-template-columns: repeat(auto-fit, minmax(250px));
         gap: 1rem;
     }
-
     .lightbox-prev, .lightbox-next {
         padding: 8px;
         font-size: 2rem;
     }
-
     .lightbox-prev { margin-right: 5px; }
     .lightbox-next { margin-left: 5px;}
     
 }
-
 @media (max-width: 480px) {
       .header{
         width: 100%;
@@ -415,8 +400,6 @@ body {
         grid-template-columns: 1fr;
     }
 }
-
-
 @media(max-width:450px){
     .header{
         width: 100%;
