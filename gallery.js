@@ -50,23 +50,12 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     ///hamburger
-
-const end = document.querySelector(".close");
-const nav = document.querySelector('.nav');
-const burg = document.querySelector('.hamburger');
-
-burg.onclick =()=>{
-    nav.style.display = 'block';
-    end.style.display = 'block';
-    burg.style.display = 'none';
-
-}
-
-end.onclick =()=>{
-    nav.style.display = 'none';
-    end.style.display = 'none';
-    burg.style.display = 'flex';
-}
+const menuIcon = document.querySelector(".menu_icon");
+const navMenu = document.querySelector(".nav");
+// 
+menuIcon.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+});
 
     // Keyboard navigation
     document.addEventListener('keydown', (e) => {

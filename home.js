@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const fname_err = document.querySelector('.name_err');
     const mailer_err = document.querySelector('.email_err');
-    const number_err = document.querySelector('.phone_err');
+    const number_err = document.querySelector('.phone_err')
 
     let valid = true;
 
@@ -47,20 +47,17 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 });
+const menuIcon = document.querySelector(".menu_icon");
+const navMenu = document.querySelector(".nav-menu");
 
-const end = document.querySelector(".close");
-const nav = document.querySelector('.nav-menu');
-const burg = document.querySelector('.hamburger');
+// }
+menuIcon.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+});
 
-burg.onclick =()=>{
-    nav.style.display = 'block';
-    end.style.display = 'block';
-    burg.style.display = 'none';
-
-}
-
-end.onclick =()=>{
-    nav.style.display = 'none';
-    end.style.display = 'none';
-    burg.style.display = 'flex';
-}
+/* Close menu when a link is clicked */
+document.querySelectorAll(".nav-link").forEach(link => {
+    link.addEventListener("click", () => {
+        navMenu.classList.remove("active");
+    });
+});

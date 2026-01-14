@@ -205,24 +205,31 @@ document.querySelectorAll('.service-card').forEach(card => {
     observer.observe(card);
 });
 
-
-
-const end = document.querySelector(".close");
+const menuIcon = document.querySelector('.menu_icon');
 const nav = document.querySelector('.nav');
-const burg = document.querySelector('.hamburger');
 
-burg.onclick =()=>{
-    nav.style.display = 'block';
-    end.style.display = 'block';
-    burg.style.display = 'none';
+menuIcon.addEventListener('click', () => {
+    nav.classList.toggle('active');
+});
 
-}
 
-end.onclick =()=>{
-    nav.style.display = 'none';
-    end.style.display = 'none';
-    burg.style.display = 'flex';
-}
+
+// const end = document.querySelector(".close");
+// const nav = document.querySelector('.nav');
+// const burg = document.querySelector('.hamburger');
+
+// burg.onclick =()=>{
+//     nav.style.display = 'block';
+//     end.style.display = 'block';
+//     burg.style.display = 'none';
+
+// }
+
+// end.onclick =()=>{
+//     nav.style.display = 'none';
+//     end.style.display = 'none';
+//     burg.style.display = 'flex';
+// }
 
 // Initialize carousel when DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
